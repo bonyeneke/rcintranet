@@ -323,7 +323,7 @@ $('form').addEventListener('submit',async event=>{
     if(result.state) binding(result.state);
     $('modal').close();
     pendingAction=null;
-    if(result.target) to(result.target);
+    if(typeof result.target==='string' && result.target) to(result.target);
     render();
     toast(result.message);
   }catch(error){$('error').textContent=error.message;}finally{$('submit').disabled=false;}
