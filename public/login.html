@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign in | Relationship Checks</title><link rel="stylesheet" href="/style.css"></head>
+<body class="login-page">
+<main>
+  <a class="brand" href="/login"><span class="mark">GT</span><span>Grant Thornton<br><small>NIGERIA INTRANET</small></span></a>
+  <section class="panel">
+    <h1 id="login-title">Sign in</h1>
+    <form id="login-form">
+      <label id="email-field">Work email<input name="email" type="email" maxlength="254" autocomplete="username" required></label>
+      <label id="password-field">Password<input name="password" type="password" minlength="12" maxlength="128" autocomplete="current-password" required></label>
+      <button class="primary" id="login-submit">Sign in</button>
+    </form>
+    <p id="login-message" role="status" aria-live="polite"></p>
+    <p><a id="mode-link" href="/login#reset">Set up or reset your password</a></p>
+  </section>
+</main>
+<script type="module" src="/login.js"></script>
+</body>
+</html>
